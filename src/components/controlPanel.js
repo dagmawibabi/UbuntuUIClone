@@ -1,7 +1,7 @@
 export const ControlPanel = (props) => {
     return(
         <div>
-            <div className={props.status ? "absolute top-10 right-2 ml-80 bg-zinc-900 px-5 py-5 rounded-3xl z-50 text-white border border-zinc-700" : "hidden"}>
+            <div className={props.status ? "absolute top-10 right-2 ml-80 bg-zinc-900 px-5 py-5 rounded-3xl z-50 text-white border border-zinc-700 cursor-default" : "hidden"}>
                 {/* R O U N D E D  */}
                 <div className="flex justify-between">
                     <div className="flex justify-start rounded-full px-4 py-2 bg-zinc-800 hover:bg-zinc-700">

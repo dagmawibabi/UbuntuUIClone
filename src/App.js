@@ -11,11 +11,12 @@ import { ActionBar } from './components/actionBar';
 
 function App() {
   const [controlPanelStatus, setControlPanelActive] = useState(false);
+  const [actionBarStatus, setActionBarActive] = useState(false);
 
   return (
     <div className="App">
-      <Panel setControlPanelActive={setControlPanelActive} controlPanelStatus={controlPanelStatus} />
-      <ActionBar />
+      <Panel setControlPanelActive={setControlPanelActive} controlPanelStatus={controlPanelStatus} setActionBarActive={setActionBarActive} actionBarStatus={actionBarStatus} />
+      <ActionBar status={actionBarStatus} />
       <ControlPanel status={controlPanelStatus} />
       <Desktop />
       <DesktopIcons />
