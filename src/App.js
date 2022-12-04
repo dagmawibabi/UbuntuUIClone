@@ -7,6 +7,7 @@ import { ControlPanel } from './components/controlPanel';
 import { DesktopIcons } from './components/desktopIcons';
 
 import { useState } from 'react';
+import { ActionBar } from './components/actionBar';
 
 function App() {
   const [controlPanelStatus, setControlPanelActive] = useState(false);
@@ -14,9 +15,10 @@ function App() {
   return (
     <div className="App">
       <Panel setControlPanelActive={setControlPanelActive} controlPanelStatus={controlPanelStatus} />
-      <DesktopIcons />
+      <ActionBar />
       <ControlPanel status={controlPanelStatus} />
       <Desktop />
+      <DesktopIcons />
       <Dock />
     </div>
   );
